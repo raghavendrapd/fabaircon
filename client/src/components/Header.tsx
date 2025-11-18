@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
-  const whatsappNumber = "+1234567890"; //todo: remove mock functionality
+  const whatsappNumber = "+91 9845157675"; //todo: remove mock functionality
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}`;
 
   return (
