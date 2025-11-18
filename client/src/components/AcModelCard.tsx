@@ -6,7 +6,6 @@ import { Snowflake, Grid3x3, Zap } from "lucide-react";
 
 interface AcModelCardProps {
   name: string;
-  brand: string;
   type: string;
   capacity: string;
   coverage: string;
@@ -17,7 +16,6 @@ interface AcModelCardProps {
 
 export default function AcModelCard({
   name,
-  brand,
   type,
   capacity,
   coverage,
@@ -25,8 +23,8 @@ export default function AcModelCard({
   features,
   imageUrl,
 }: AcModelCardProps) {
-  const whatsappNumber = "+1234567890"; //todo: remove mock functionality
-  const whatsappMessage = `Hi, I'm interested in renting the ${brand} ${name}. Can you provide more details?`;
+  const whatsappNumber = "+91 9845157675"; //todo: remove mock functionality
+  const whatsappMessage = `Hi, I'm interested in renting the ${name}. Can you provide more details?`;
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -35,7 +33,7 @@ export default function AcModelCard({
         <div className="aspect-[4/3] bg-muted overflow-hidden">
           <img 
             src={imageUrl} 
-            alt={`${brand} ${name}`}
+            alt={`${name}`}
             className="w-full h-full object-contain"
             data-testid={`img-ac-${name.toLowerCase().replace(/\s+/g, '-')}`}
           />
@@ -48,7 +46,7 @@ export default function AcModelCard({
             <h3 className="text-2xl font-semibold mb-1" data-testid={`text-model-name-${name.toLowerCase().replace(/\s+/g, '-')}`}>
               {name}
             </h3>
-            <p className="text-sm text-muted-foreground">{brand}</p>
+            <p className="text-sm text-muted-foreground"></p>
           </div>
           <Badge variant="secondary" className="shrink-0">
             {type}
