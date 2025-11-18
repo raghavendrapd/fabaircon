@@ -7,28 +7,18 @@ export default defineConfig({
   plugins: [
     react(),
     runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
-      ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
-          ),
-          await import("@replit/vite-plugin-dev-banner").then((m) =>
-            m.devBanner(),
-          ),
-        ]
-      : []),
+    // ... your dynamic plugins if you really need them
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@": path.resolve(__dirname, "src"),        // NOT "client/src"
+      "@shared": path.resolve(__dirname, "../shared"), // adjust if needed
+      "@assets": path.resolve(__dirname, "../attached_assets"),
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),
+  // REMOVE the "root" line! Vite automatically uses the folder it is run from (which is already /client).
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: "dist",      // This is the default, you can keep your "dist/public" if you want, but just "dist" is fine.
     emptyOutDir: true,
   },
   server: {
@@ -38,3 +28,4 @@ export default defineConfig({
     },
   },
 });
+
