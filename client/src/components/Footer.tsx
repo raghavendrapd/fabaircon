@@ -2,7 +2,7 @@ import { FaWhatsapp, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
-  const whatsappNumber = "+1234567890"; //todo: remove mock functionality
+  const whatsappNumber = "+91 9845157675"; //todo: remove mock functionality
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}`;
 
   return (
@@ -65,8 +65,9 @@ export default function Footer() {
               <div className="flex items-start gap-2 text-sm">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
                 <span className="text-muted-foreground">
-                  123 Cool Street, City Center<br />
-                  Your City, State 12345
+                  No.18, Thanisandra Main Road, Near Elements Mall, 1st Cross Ashwath Nagar
+                  Thanisandra-560045,<br />
+                  Bengaluru, Karnataka
                 </span>
               </div>
             </div>
@@ -76,16 +77,12 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Business Hours</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
               <div className="flex justify-between">
-                <span>Monday - Friday:</span>
+                <span>Monday - Saturday:</span>
                 <span>9:00 AM - 7:00 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Saturday:</span>
-                <span>10:00 AM - 5:00 PM</span>
-              </div>
-              <div className="flex justify-between">
                 <span>Sunday:</span>
-                <span>Closed</span>
+                <span>9:00 AM - 5:00</span>
               </div>
             </div>
             <a 
