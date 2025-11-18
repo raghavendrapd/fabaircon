@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import heroImage from '@assets/generated_images/Hero_background_living_room_52872386.png';
 
 export default function Hero() {
-  const whatsappNumber = "+1234567890"; //todo: remove mock functionality
+  const whatsappNumber = "+91 9845157675"; //todo: remove mock functionality
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=Hi, I'm interested in renting an AC unit`;
 
   const scrollToModels = () => {
