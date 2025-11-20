@@ -26,7 +26,7 @@ const acModels = [
           "Built-in dehumidifier",
           "Remote control included",
         ],
-        imageUrl: "portableAcImage",
+        imageUrl: "/assets/generated_images/Portable_AC_unit_f1927014.png",
       },
       {
         name: "Premium Split AC",
@@ -39,7 +39,7 @@ const acModels = [
           "Energy efficient compressor",
           "Auto clean function",
         ],
-        imageUrl: " splitAcImage ",
+        imageUrl: "/assets/generated_images/Split_AC_unit_white_69b54d10.png",
       },
       {
         name: "Dual Split System",
@@ -52,7 +52,7 @@ const acModels = [
           "Energy efficient operation",
           "Premium quality components",
         ],
-        imageUrl: "dualSplitAcImage ",
+        imageUrl: "/assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
       },
       {
         name: "Cassette Ceiling AC",
@@ -65,7 +65,7 @@ const acModels = [
           "Sleek ceiling design",
           "Powerful cooling capacity",
         ],
-        imageUrl: "cassetteAcImage",
+        imageUrl: "/assets/generated_images/Cassette_ceiling_AC_29a173d2.png",
       },
       {
         name: "Floor Standing Tower",
@@ -78,7 +78,7 @@ const acModels = [
           "Advanced air purification",
           "Smart temperature control",
         ],
-        imageUrl: "floorAcImage",
+        imageUrl: "/assets/generated_images/Floor_standing_AC_e60e569d.png",
       },
       {
         name: "Ductable AC",
@@ -91,9 +91,9 @@ const acModels = [
           "Economical cooling",
           "Low maintenance",
         ],
-        imageUrl: "floorAcImage",
+        imageUrl: "/assets/generated_images/Floor_standing_AC_e60e569d.png",
       },
-  {
+      {
         name: "In-Built AC",
         type: "Mobile",
         capacity: "7.5 Ton",
@@ -104,7 +104,7 @@ const acModels = [
           "Smart temperature regulation",
           "Eco-friendly refrigerant system",
         ],
-        imageUrl: "floorAcImage",
+        imageUrl: "/assets/generated_images/Floor_standing_AC_e60e569d.png",
       },
 ];
 
