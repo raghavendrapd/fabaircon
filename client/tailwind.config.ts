@@ -82,11 +82,12 @@ export default {
           offline: "rgb(156 163 175)",
         },
       },
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
-      },
+     fontFamily: {
+  sans: ["Manrope", "ui-sans-serif", "system-ui"],
+  serif: ["var(--font-serif)"],
+  mono: ["var(--font-mono)"],
+},
+
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -98,7 +99,7 @@ export default {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-down": "accordion-down 0.2s ease-out",``
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
