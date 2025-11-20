@@ -130,11 +130,11 @@ export default function Home() {
               <AcModelCard
                 key={model.id}
                 name={model.name}
-                brand={model.brand}
+                
                 type={model.type}
                 capacity={model.capacity}
                 coverage={model.coverage}
-                energyRating={model.energyRating}
+                
                 features={model.features}
                 imageUrl={model.imageUrl}
               />
