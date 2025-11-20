@@ -15,19 +15,8 @@ import floorAcImage from '@assets/generated_images/Floor_standing_AC_e60e569d.pn
 import dualSplitAcImage from '@assets/generated_images/Dual_split_AC_system_1a0f6d94.png';
 
 const acModels = [
-{
+    {
     id: 1,
-    name: "Split AC",
-    
-    type: "Split",
-    capacity: "1.5 Ton",
-    coverage: "Medium rooms",
-    
-    features: ["Inverter", "Silent Operation", "Anti-Bacterial Filter"],
-    imageUrl: splitAcImage,
-  },
-  {
-    id: 2,
     name: "Portable AC",
     
     type: "Portable",
@@ -37,17 +26,30 @@ const acModels = [
     features: ["Compact", "Easy to Move", "Remote Control"],
     imageUrl: portableAcImage,
   },
-  {
-    id: 3,
-    name: "Window AC",
+{
+    id: 2,
+    name: "Split AC",
     
-    type: "Window",
+    type: "Split",
     capacity: "1.5 Ton",
     coverage: "Medium rooms",
     
-    features: ["Affordable", "Easy Installation", "Good Cooling"],
-    imageUrl: windowAcImage,
+    features: ["Inverter", "Silent Operation", "Anti-Bacterial Filter"],
+    imageUrl: splitAcImage,
   },
+    {
+    id: 3,
+    name: "Dual Split AC System",
+    
+    type: "Split",
+    capacity: "1 Ton x 2",
+    coverage: "Two Spaces",
+    
+    features: ["Dual Cooling", "Multi-Room", "Smart Control"],
+    imageUrl: dualSplitAcImage,
+  },
+  
+  
   {
     id: 4,
     name: "Cassette Ceiling AC",
@@ -70,17 +72,46 @@ const acModels = [
     features: ["High Power", "Remote", "Modern Look"],
     imageUrl: floorAcImage,
   },
-  {
+    {
     id: 6,
-    name: "Dual Split AC System",
+    name: "Window AC",
     
-    type: "Split",
-    capacity: "1 Ton x 2",
-    coverage: "Two Spaces",
+    type: "Window",
+    capacity: "1.5 Ton",
+    coverage: "Medium rooms",
     
-    features: ["Dual Cooling", "Multi-Room", "Smart Control"],
-    imageUrl: dualSplitAcImage,
+    features: ["Affordable", "Easy Installation", "Good Cooling"],
+    imageUrl: windowAcImage,
   },
+  
+    {
+        id:7,
+        name: "Ductable AC",
+        type: "Ductable",
+        capacity: "8.5 / 11 / 17 / 22 Ton",
+        coverage: "120-150 sq ft",
+        features: [
+          "Compact design",
+          "Easy installation",
+          "Economical cooling",
+          "Low maintenance",
+        ],
+        imageUrl: dualSplitAcImage,
+      },
+      {
+        id :8,
+        name: "In-Built AC",
+        type: "Mobile",
+        capacity: "7.5 Ton",
+        coverage: "600-800 sq ft",
+        features: [
+          "Advanced airflow control",
+          "Energy-saving operation",
+          "Smart temperature regulation",
+          "Eco-friendly refrigerant system",
+        ],
+        imageUrl: dualSplitAcImage,
+      },
      
 ];
 
