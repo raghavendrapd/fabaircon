@@ -15,97 +15,73 @@ import floorAcImage from '@assets/generated_images/Floor_standing_AC_e60e569d.pn
 import dualSplitAcImage from '@assets/generated_images/Dual_split_AC_system_1a0f6d94.png';
 
 const acModels = [
- {
-        name: "Portable AC Unit",
-        type: "Portable",
-        capacity: "1 Ton",
-        coverage: "120-150 sq ft",
-        features: [
-          "Easy to move and install",
-          "No permanent installation needed",
-          "Built-in dehumidifier",
-          "Remote control included",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
-      {
-        name: "Premium Split AC",
-        type: "Split AC",
-        capacity: "1.5 Ton",
-        coverage: "150-180 sq ft",
-        features: [
-          "Fast cooling technology",
-          "Low noise operation",
-          "Energy efficient compressor",
-          "Auto clean function",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
-      {
-        name: "Dual Split System",
-        type: "Multi-Split",
-        capacity: "2.5 Ton",
-        coverage: "300-350 sq ft",
-        features: [
-          "Cool multiple rooms",
-          "Individual room control",
-          "Energy efficient operation",
-          "Premium quality components",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
-      {
-        name: "Cassette Ceiling AC",
-        type: "Cassette",
-        capacity: "2 Ton",
-        coverage: "250-300 sq ft",
-        features: [
-          "360-degree airflow",
-          "Ideal for offices",
-          "Sleek ceiling design",
-          "Powerful cooling capacity",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
-      {
-        name: "Floor Standing Tower",
-        type: "Floor Standing",
-        capacity: "3 / 4 / 5.5  Ton",
-        coverage: "3:200-240/4:400-500/5.5:600-750 sq ft ",
-        features: [
-          "Modern tower design",
-          "Space-saving footprint",
-          "Advanced air purification",
-          "Smart temperature control",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
-      {
-        name: "Ductable AC",
-        type: "Ductable",
-        capacity: "8.5 / 11 / 17 / 22 Ton",
-        coverage: "120-150 sq ft",
-        features: [
-          "Compact design",
-          "Easy installation",
-          "Economical cooling",
-          "Low maintenance",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
-      {
-        name: "In-Built AC",
-        type: "Mobile",
-        capacity: "7.5 Ton",
-        coverage: "600-800 sq ft",
-        features: [
-          "Advanced airflow control",
-          "Energy-saving operation",
-          "Smart temperature regulation",
-          "Eco-friendly refrigerant system",
-        ],
-        imageUrl: "@assets/generated_images/Dual_split_AC_system_1a0f6d94.png",
-      },
+{
+    id: 1,
+    name: "Split AC",
+    
+    type: "Split",
+    capacity: "1.5 Ton",
+    coverage: "Medium rooms",
+    
+    features: ["Inverter", "Silent Operation", "Anti-Bacterial Filter"],
+    imageUrl: splitAcImage,
+  },
+  {
+    id: 2,
+    name: "Portable AC",
+    
+    type: "Portable",
+    capacity: "1 Ton",
+    coverage: "Small rooms",
+   
+    features: ["Compact", "Easy to Move", "Remote Control"],
+    imageUrl: portableAcImage,
+  },
+  {
+    id: 3,
+    name: "Window AC",
+    
+    type: "Window",
+    capacity: "1.5 Ton",
+    coverage: "Medium rooms",
+    
+    features: ["Affordable", "Easy Installation", "Good Cooling"],
+    imageUrl: windowAcImage,
+  },
+  {
+    id: 4,
+    name: "Cassette Ceiling AC",
+    
+    type: "Cassette",
+    capacity: "2 Ton",
+    coverage: "Large halls",
+    
+    features: ["360° Air Flow", "Premium Design", "Silent"],
+    imageUrl: cassetteAcImage,
+  },
+  {
+    id: 5,
+    name: "Floor Standing AC",
+    
+    type: "Floor Standing",
+    capacity: "2 Ton",
+    coverage: "Large halls",
+    
+    features: ["High Power", "Remote", "Modern Look"],
+    imageUrl: floorAcImage,
+  },
+  {
+    id: 6,
+    name: "Dual Split AC System",
+    
+    type: "Split",
+    capacity: "1 Ton x 2",
+    coverage: "Two Spaces",
+    
+    features: ["Dual Cooling", "Multi-Room", "Smart Control"],
+    imageUrl: dualSplitAcImage,
+  },
+     
 ];
 
 export default function Home() {
