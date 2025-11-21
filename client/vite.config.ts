@@ -2,23 +2,24 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+import { remixVitePlugin } from "@remix-run/vite"; // ADD THIS LINE
 
 export default defineConfig({
   plugins: [
     react(),
+    remixVitePlugin(),                     // ADD THIS LINE
     runtimeErrorOverlay(),
-    // ... your dynamic plugins if you really need them
+    // ... your other plugins
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),        // NOT "client/src"
-      "@shared": path.resolve(__dirname, "../shared"), // adjust if needed
+      "@": path.resolve(__dirname, "src"),
+      "@shared": path.resolve(__dirname, "../shared"),
       "@assets": path.resolve(__dirname, "../attached_assets"),
     },
   },
-  // REMOVE the "root" line! Vite automatically uses the folder it is run from (which is already /client).
   build: {
-    outDir: "dist",      // This is the default, you can keep your "dist/public" if you want, but just "dist" is fine.
+    outDir: "dist",
     emptyOutDir: true,
   },
   server: {
@@ -28,4 +29,3 @@ export default defineConfig({
     },
   },
 });
-
