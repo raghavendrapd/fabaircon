@@ -11,7 +11,6 @@ export default {
         sm: ".1875rem", /* 3px */
       },
       colors: {
-        // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",
@@ -82,12 +81,11 @@ export default {
           offline: "rgb(156 163 175)",
         },
       },
-     fontFamily: {
-  sans: ["Manrope", "ui-sans-serif", "system-ui"],
-  serif: ["var(--font-serif)"],
-  mono: ["var(--font-mono)"],
-},
-
+      fontFamily: {
+        sans: ["Manrope", "ui-sans-serif", "system-ui"],
+        serif: ["var(--font-serif)"],
+        mono: ["var(--font-mono)"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -99,7 +97,7 @@ export default {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",``
+        "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
