@@ -4,11 +4,10 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-  "dev": "vite",
-  "build": "remix vite:build",
-  "preview": "vite preview"
-},
-
+    "dev": "vite",
+    "build": "remix vite:build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
@@ -97,7 +96,8 @@
     "tailwindcss": "^3.4.17",
     "tsx": "^4.20.5",
     "typescript": "5.6.3",
-    "vite": "^5.4.20"
+    "vite": "^5.4.20",
+    "@remix-run/dev": "^2.5.2"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
