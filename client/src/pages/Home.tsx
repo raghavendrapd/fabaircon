@@ -14,104 +14,83 @@ import cassetteAcImage from '@assets/generated_images/Cassette_ceiling_AC_29a173
 import floorAcImage from '@assets/generated_images/Floor_standing_AC_e60e569d.png';
 import dualSplitAcImage from '@assets/generated_images/Dual_split_AC_system_1a0f6d94.png';
 import Ductableac from '@assets/generated_images/ductable-ac-units-563.jpg';
-import Inbuiltac from '@assets/generated_images/in built.png.avif;
+import Inbuiltac from '@assets/generated_images/in built.png.avif';
+
 const acModels = [
-    {
+  {
     id: 1,
     name: "Portable AC",
-    
     type: "Portable",
     capacity: "1 Ton",
-    
-   
     features: ["Compact", "Easy to Move", "Remote Control"],
     imageUrl: portableAcImage,
   },
-{
+  {
     id: 2,
     name: "Split AC",
-    
     type: "Split",
     capacity: "1.5 Ton",
-    
-    
     features: ["Inverter", "Silent Operation", "Anti-Bacterial Filter"],
     imageUrl: splitAcImage,
   },
-    {
+  {
     id: 3,
     name: "Dual Split AC System",
-    
     type: "Split",
     capacity: "1 Ton x 2",
-    
-    
     features: ["Dual Cooling", "Multi-Room", "Smart Control"],
     imageUrl: dualSplitAcImage,
   },
-  
-  
   {
     id: 4,
     name: "Cassette Ceiling AC",
-    
     type: "Cassette",
     capacity: "2 Ton",
-    c
-    
     features: ["360° Air Flow", "Premium Design", "Silent"],
     imageUrl: cassetteAcImage,
   },
   {
     id: 5,
     name: "Floor Standing AC",
-    
     type: "Floor Standing",
     capacity: "2 Ton",
-    
-    
     features: ["High Power", "Remote", "Modern Look"],
     imageUrl: floorAcImage,
   },
-    {
+  {
     id: 6,
     name: "Window AC",
-    
     type: "Window",
     capacity: "1.5 Ton",
-    
-    
     features: ["Affordable", "Easy Installation", "Good Cooling"],
     imageUrl: windowAcImage,
   },
-  
-    {
-        id:7,
-        name: "Ductable AC",
-        type: "Ductable",
-        capacity: "8.5 / 11 / 17 / 22 Ton",
-        features: [
-          "Compact design",
-          "Easy installation",
-          "Economical cooling",
-          "Low maintenance",
-        ],
-        imageUrl: Ductableac,
-      },
-      {
-        id :8,
-        name: "In-Built AC",
-        type: "Mobile",
-        capacity: "7.5 Ton",
-        features: [
-          "Advanced airflow control",
-          "Energy-saving operation",
-          "Smart temperature regulation",
-          "Eco-friendly refrigerant system",
-        ],
-        imageUrl: Inbuiltac,
-      },
-     
+  {
+    id: 7,
+    name: "Ductable AC",
+    type: "Ductable",
+    capacity: "8.5 / 11 / 17 / 22 Ton",
+    features: [
+      "Compact design",
+      "Easy installation",
+      "Economical cooling",
+      "Low maintenance",
+    ],
+    imageUrl: Ductableac,
+  },
+  {
+    id: 8,
+    name: "In-Built AC",
+    type: "Mobile",
+    capacity: "7.5 Ton",
+    features: [
+      "Advanced airflow control",
+      "Energy-saving operation",
+      "Smart temperature regulation",
+      "Eco-friendly refrigerant system",
+    ],
+    imageUrl: Inbuiltac,
+  },
 ];
 
 export default function Home() {
@@ -136,11 +115,8 @@ export default function Home() {
               <AcModelCard
                 key={model.id}
                 name={model.name}
-                
                 type={model.type}
                 capacity={model.capacity}
-                coverage={model.coverage}
-                
                 features={model.features}
                 imageUrl={model.imageUrl}
               />
@@ -156,4 +132,3 @@ export default function Home() {
     </div>
   );
 }
-
