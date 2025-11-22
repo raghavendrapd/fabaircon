@@ -8,7 +8,7 @@ interface AcModelCardProps {
   name: string;
   type: string;
   capacity: string;
-  coverage: string;
+  
   
   features: string[];
   imageUrl: string;
@@ -18,7 +18,7 @@ export default function AcModelCard({
   name,
   type,
   capacity,
-  coverage,
+  
   
   features,
   imageUrl,
