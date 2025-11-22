@@ -13,8 +13,8 @@ import windowAcImage from '@assets/generated_images/Window_AC_unit_cebc637b.png'
 import cassetteAcImage from '@assets/generated_images/Cassette_ceiling_AC_29a173d2.png';
 import floorAcImage from '@assets/generated_images/Floor_standing_AC_e60e569d.png';
 import dualSplitAcImage from '@assets/generated_images/Dual_split_AC_system_1a0f6d94.png';
-import Ductableac from '@assets/generated_images/
-import Inbuiltac from '@assets/generated_images
+import Ductableac from '@assets/generated_images/ductable-ac-units-563.jpg';
+import Inbuiltac from '@assets/generated_images/in built.png.avif;
 const acModels = [
     {
     id: 1,
