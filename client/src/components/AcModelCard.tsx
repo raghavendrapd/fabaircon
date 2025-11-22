@@ -62,10 +62,6 @@ export default function AcModelCard({
       </div>
       <div className="flex items-center gap-2">
         <Grid3x3 className="h-4 w-4 text-indigo-400" />
-        <div>
-          <div className="text-xs text-gray-500">Coverage</div>
-          <div className="text-sm font-medium text-gray-800">{coverage}</div>
-        </div>
       </div>
     </div>
 
