@@ -22,7 +22,7 @@ const acModels = [
     
     type: "Portable",
     capacity: "1 Ton",
-    coverage: "Small rooms",
+    
    
     features: ["Compact", "Easy to Move", "Remote Control"],
     imageUrl: portableAcImage,
