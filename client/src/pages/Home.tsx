@@ -13,7 +13,8 @@ import windowAcImage from '@assets/generated_images/Window_AC_unit_cebc637b.png'
 import cassetteAcImage from '@assets/generated_images/Cassette_ceiling_AC_29a173d2.png';
 import floorAcImage from '@assets/generated_images/Floor_standing_AC_e60e569d.png';
 import dualSplitAcImage from '@assets/generated_images/Dual_split_AC_system_1a0f6d94.png';
-
+import Ductableac from '@assets/generated_images/
+import Inbuiltac from '@assets/generated_images
 const acModels = [
     {
     id: 1,
@@ -32,7 +33,7 @@ const acModels = [
     
     type: "Split",
     capacity: "1.5 Ton",
-    coverage: "Medium rooms",
+    
     
     features: ["Inverter", "Silent Operation", "Anti-Bacterial Filter"],
     imageUrl: splitAcImage,
@@ -43,7 +44,7 @@ const acModels = [
     
     type: "Split",
     capacity: "1 Ton x 2",
-    coverage: "Two Spaces",
+    
     
     features: ["Dual Cooling", "Multi-Room", "Smart Control"],
     imageUrl: dualSplitAcImage,
@@ -56,7 +57,7 @@ const acModels = [
     
     type: "Cassette",
     capacity: "2 Ton",
-    coverage: "Large halls",
+    c
     
     features: ["360° Air Flow", "Premium Design", "Silent"],
     imageUrl: cassetteAcImage,
@@ -67,7 +68,7 @@ const acModels = [
     
     type: "Floor Standing",
     capacity: "2 Ton",
-    coverage: "Large halls",
+    
     
     features: ["High Power", "Remote", "Modern Look"],
     imageUrl: floorAcImage,
@@ -78,7 +79,7 @@ const acModels = [
     
     type: "Window",
     capacity: "1.5 Ton",
-    coverage: "Medium rooms",
+    
     
     features: ["Affordable", "Easy Installation", "Good Cooling"],
     imageUrl: windowAcImage,
@@ -89,28 +90,26 @@ const acModels = [
         name: "Ductable AC",
         type: "Ductable",
         capacity: "8.5 / 11 / 17 / 22 Ton",
-        coverage: "120-150 sq ft",
         features: [
           "Compact design",
           "Easy installation",
           "Economical cooling",
           "Low maintenance",
         ],
-        imageUrl: dualSplitAcImage,
+        imageUrl: Ductableac,
       },
       {
         id :8,
         name: "In-Built AC",
         type: "Mobile",
         capacity: "7.5 Ton",
-        coverage: "600-800 sq ft",
         features: [
           "Advanced airflow control",
           "Energy-saving operation",
           "Smart temperature regulation",
           "Eco-friendly refrigerant system",
         ],
-        imageUrl: dualSplitAcImage,
+        imageUrl: Inbuiltac,
       },
      
 ];
