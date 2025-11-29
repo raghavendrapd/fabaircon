@@ -53,7 +53,7 @@ const acModels = [
     id: 5,
     name: "Floor Standing AC",
     type: "Floor Standing",
-    capacity: "2 Ton",
+    capacity: "2 / 3.5 / 5 Ton",
     features: ["High Power", "Remote", "Modern Look"],
     imageUrl: floorAcImage,
   },
